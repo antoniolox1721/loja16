@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centro Cultural Aurora — Início</title>
+    <meta
+      name="description"
+      content="Website institucional minimalista de um centro cultural contemporâneo."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo-principal">Saltar para o conteúdo principal</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo-link" aria-label="Voltar à página inicial">
+          <!-- LOGÓTIPO: Substituir este bloco por imagem SVG/PNG oficial -->
+          <div class="logo-placeholder" role="img" aria-label="Logótipo temporário">
+            <span>LOGÓTIPO</span>
+          </div>
+        </a>
+
+        <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal">
+          Menu
+        </button>
+
+        <nav id="menu-principal" class="main-nav" aria-label="Navegação principal">
+          <ul>
+            <li><a class="is-active" href="index.html">Início</a></li>
+            <li><a href="exposicoes.html">Exposições</a></li>
+            <li><a href="artistas.html">Artistas</a></li>
+            <li><a href="programacao.html">Programação</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+          </ul>
+        </nav>
+
+        <a class="header-contact" href="contactos.html">Fale connosco</a>
+      </div>
+    </header>
+
+    <main id="conteudo-principal">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Centro Cultural</p>
+            <h1>Um espaço de encontro entre arte contemporânea e comunidade.</h1>
+            <p class="lead">
+              Texto introdutório (placeholder): o Centro Cultural Aurora promove exposições,
+              programação multidisciplinar e residências artísticas, com uma abordagem aberta,
+              inclusiva e atual.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-light" href="exposicoes.html">Ver exposições</a>
+              <a class="btn btn-outline" href="programacao.html">Explorar programação</a>
+            </div>
+          </div>
+          <div class="hero-card" aria-hidden="true">
+            <!-- IMAGEM DE DESTAQUE: Substituir por imagem real -->
+            <div class="image-placeholder large">Imagem da exposição em curso</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light">
+        <div class="container">
+          <header class="section-heading">
+            <h2>Destaques</h2>
+            <p>Seleção rápida para visitantes e parceiros institucionais.</p>
+          </header>
+
+          <div class="cards-grid cards-3">
+            <article class="card">
+              <p class="card-label">Exposição atual</p>
+              <h3>Cartografias do Presente</h3>
+              <p>12 Mar — 30 Jun 2026</p>
+              <p>
+                Placeholder: instalação coletiva sobre memória urbana, território e transformação.
+              </p>
+              <a href="exposicao.html" class="text-link">Ver detalhe</a>
+            </article>
+
+            <article class="card">
+              <p class="card-label">Artista em destaque</p>
+              <h3>Inês Carvalho</h3>
+              <p>Artes visuais e media híbridos</p>
+              <p>
+                Placeholder: prática artística centrada na relação entre arquivo, som e imagem.
+              </p>
+              <a href="artistas.html" class="text-link">Conhecer artista</a>
+            </article>
+
+            <article class="card">
+              <p class="card-label">Próximo evento</p>
+              <h3>Conversa aberta: Curadoria e cidade</h3>
+              <p>05 Mai 2026 · 18:30</p>
+              <p>
+                Placeholder: sessão pública com equipa curatorial e convidados internacionais.
+              </p>
+              <a href="programacao.html" class="text-link">Adicionar à agenda</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-title">Centro Cultural Aurora</p>
+          <p>Rua Exemplo, 100 · 1000-000 Lisboa</p>
+        </div>
+        <div>
+          <p><a href="mailto:geral@centroaurora.pt">geral@centroaurora.pt</a></p>
+          <p><a href="tel:+351210000000">+351 210 000 000</a></p>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <small>© 2026 Centro Cultural Aurora. Todos os direitos reservados.</small>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
