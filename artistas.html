@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
-  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Centro Cultural Aurora — Artistas</title><link rel="stylesheet" href="styles.css" /></head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centro Cultural Aurora — Artistas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
   <body>
-    <header class="site-header compact"><div class="container header-inner"><a href="index.html" class="logo-link"><div class="logo-placeholder"><span>LOGÓTIPO</span></div></a><nav class="main-nav"><ul><li><a href="index.html">Início</a></li><li><a href="exposicoes.html">Exposições</a></li><li><a class="is-active" href="artistas.html">Artistas</a></li><li><a href="programacao.html">Programação</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="contactos.html">Contactos</a></li></ul></nav></div></header>
-    <main class="section section-light"><div class="container"><header class="section-heading"><h1>Artistas associados</h1><p>Lista placeholder para futura base de dados de artistas.</p></header><div class="cards-grid cards-3"><article class="card"><div class="image-placeholder">Fotografia</div><h2>Inês Carvalho</h2><p class="meta">Artes visuais</p><p>Mini biografia placeholder com foco em prática contemporânea.</p></article><article class="card"><div class="image-placeholder">Fotografia</div><h2>Tomás Neves</h2><p class="meta">Performance</p><p>Mini biografia placeholder sobre investigação corpo-espaço.</p></article><article class="card"><div class="image-placeholder">Fotografia</div><h2>Marta Guedes</h2><p class="meta">Fotografia</p><p>Mini biografia placeholder sobre processos documentais.</p></article></div></div></main>
-    <footer class="site-footer"><div class="container footer-bottom"><small>© 2026 Centro Cultural Aurora.</small></div></footer>
+    <div class="site-layout">
+      <aside class="sidebar">
+        <div class="sidebar-inner">
+          <a class="logo-placeholder" href="index.html"><span>LOGÓTIPO</span></a>
+          <button class="menu-toggle" aria-expanded="false" aria-controls="menu-lateral">Menu</button>
+          <nav id="menu-lateral" class="sidebar-nav">
+            <a href="index.html">Início</a>
+            <a href="exposicoes.html">Exposições</a>
+            <a class="is-active" href="artistas.html">Artistas</a>
+            <a href="programacao.html">Programação</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contactos.html">Contactos</a>
+          </nav>
+          <div class="sidebar-meta"><a href="mailto:geral@centroaurora.pt">geral@centroaurora.pt</a><a href="#">Instagram</a></div>
+        </div>
+      </aside>
+
+      <main class="content">
+        <section class="page-block archive-list">
+          <h1>ARTISTAS</h1>
+          <div class="archive-head"><p>Nome</p><p>Disciplina</p><p>Mini bio</p><p>Ligações</p></div>
+          <div class="archive-row four"><p>Inês Carvalho</p><p>Instalação / Vídeo</p><p>Trabalho sobre arquivo, som e ecologias urbanas.</p><p><a href="exposicao.html">Perfil</a></p></div>
+          <div class="archive-row four"><p>Tomás Neves</p><p>Performance</p><p>Prática centrada em corpo, tempo e espaço público.</p><p><a href="exposicao.html">Perfil</a></p></div>
+          <div class="archive-row four"><p>Marta Guedes</p><p>Fotografia</p><p>Investigação visual entre documento e ficção.</p><p><a href="exposicao.html">Perfil</a></p></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

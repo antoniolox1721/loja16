@@ -1,18 +1,10 @@
 const toggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.main-nav');
+const nav = document.querySelector('.sidebar-nav');
 
-if (toggle && menu) {
+if (toggle && nav) {
   toggle.addEventListener('click', () => {
-    const expanded = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!expanded));
-    menu.classList.toggle('is-open');
+    const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!isExpanded));
+    nav.classList.toggle('is-open');
   });
 }
-
-const forms = document.querySelectorAll('.contact-form');
-forms.forEach((form) => {
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    alert('Mensagem enviada (placeholder). Ligue depois ao seu backend/form service.');
-  });
-});

@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
-  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Centro Cultural Aurora — Página da Exposição</title><link rel="stylesheet" href="styles.css" /></head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centro Cultural Aurora — Exposição</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
   <body>
-    <header class="site-header compact"><div class="container header-inner"><a href="index.html" class="logo-link"><div class="logo-placeholder"><span>LOGÓTIPO</span></div></a><nav class="main-nav"><ul><li><a href="index.html">Início</a></li><li><a class="is-active" href="exposicoes.html">Exposições</a></li><li><a href="artistas.html">Artistas</a></li><li><a href="programacao.html">Programação</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="contactos.html">Contactos</a></li></ul></nav></div></header>
-    <main class="section section-light"><div class="container"><p class="eyebrow text-orange">Página individual (template)</p><h1>Título da Exposição</h1><p class="meta">Datas da exposição · Curadoria</p><div class="image-placeholder large">Imagem principal placeholder</div><div class="prose"><p>Texto curatorial placeholder. Substituir por conteúdo oficial.</p><p>Informação adicional placeholder sobre artistas, atividades paralelas e visitas guiadas.</p></div></div></main>
-    <footer class="site-footer"><div class="container footer-bottom"><small>© 2026 Centro Cultural Aurora.</small></div></footer>
+    <div class="site-layout">
+      <aside class="sidebar">
+        <div class="sidebar-inner">
+          <a class="logo-placeholder" href="index.html"><span>LOGÓTIPO</span></a>
+          <button class="menu-toggle" aria-expanded="false" aria-controls="menu-lateral">Menu</button>
+          <nav id="menu-lateral" class="sidebar-nav">
+            <a href="index.html">Início</a>
+            <a class="is-active" href="exposicoes.html">Exposições</a>
+            <a href="artistas.html">Artistas</a>
+            <a href="programacao.html">Programação</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contactos.html">Contactos</a>
+          </nav>
+          <div class="sidebar-meta"><a href="mailto:geral@centroaurora.pt">geral@centroaurora.pt</a><a href="#">Instagram</a></div>
+        </div>
+      </aside>
+
+      <main class="content">
+        <div class="hero-image">Imagem da exposição (placeholder)</div>
+        <section class="page-block archive-list">
+          <h1>TÍTULO DA EXPOSIÇÃO</h1>
+          <div class="archive-row"><p>Datas</p><p>12.03 — 30.06.2026</p><p>Galeria Norte</p></div>
+          <div class="archive-row"><p>Curadoria</p><p>Nome curador(a) (placeholder)</p><p>Produção interna</p></div>
+          <div class="archive-row"><p>Descrição</p><p>Texto curatorial placeholder para substituir por conteúdo final.</p><p><a href="exposicoes.html">Voltar à lista</a></p></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
